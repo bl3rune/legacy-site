@@ -1,0 +1,66 @@
+/* 
+    Created on : 25-Jan-2017, 22:03:04
+    Author     : Ben
+*/
+body {
+    background-color: #dde0d2;
+    padding: 3%;
+}
+
+nav{
+    border: 1px solid #684e09;
+    background-color: #cebb98;
+    width: 100%;
+    height: 5%;
+    
+}
+
+textarea{
+    width:  100%;
+    height: 600px;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+}
+
+h1{
+    font-family: Helvetica, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px #684e09;
+}
+
+.wrapper {
+    width: 100%;
+    height: 800px;
+    outline: 1px solid #684e09;
+    background-color: #cebb98;
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+    float: left;
+    outline: 1px solid #684e09;
+    background-color: #cebb98;
+    padding: 1%;
+}
+
+.center {
+    width: 12%;
+    height: 100%;
+    float: left;
+    outline: 1px solid #684e09;
+    background-color: #cebb98;
+    padding: 2%;
+}
+
+.right {
+    width: 40%;
+    height: 100%;
+    float: left;
+    outline: 1px solid #684e09;
+    background-color: #cebb98;
+    padding: 1%;
+}
