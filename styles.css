@@ -3,13 +3,13 @@
     Author     : Ben
 */
 body {
-    background-color: #dde0d2;
+    background-color: #ffffff;
     padding: 3%;
 }
 
 nav{
-    border: 1px solid #684e09;
-    background-color: #cebb98;
+    border: 1px solid #666666;
+    background-color: #e0dfce;
     width: 100%;
     height: 5%;
     
@@ -34,16 +34,16 @@ h1{
 .wrapper {
     width: 100%;
     height: 800px;
-    outline: 1px solid #684e09;
-    background-color: #cebb98;
+    outline: 1px solid #666666;
+    background-color: #e0dfce;
 }
 
 .left {
     width: 40%;
     height: 100%;
     float: left;
-    outline: 1px solid #684e09;
-    background-color: #cebb98;
+    outline: 1px solid #666666;
+    background-color: #e0dfce;
     padding: 1%;
 }
 
@@ -51,8 +51,8 @@ h1{
     width: 12%;
     height: 100%;
     float: left;
-    outline: 1px solid #684e09;
-    background-color: #cebb98;
+    outline: 1px solid #666666;
+    background-color: #e0dfce;
     padding: 2%;
 }
 
@@ -60,7 +60,7 @@ h1{
     width: 40%;
     height: 100%;
     float: left;
-    outline: 1px solid #684e09;
-    background-color: #cebb98;
+    outline: 1px solid #666666;
+    background-color: #e0dfce;
     padding: 1%;
 }
