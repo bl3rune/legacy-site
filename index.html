@@ -8,7 +8,7 @@
         <script>
             function convert(){
                 var text = document.getElementById('input').value;
-                text = text.replace('\n',',\n');
+                text = text.replace(/\n/g,',\n');
                 document.getElementById('output').innerHTML = text;
             }
             
