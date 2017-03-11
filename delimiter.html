@@ -5,6 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="shortcut icon" href="images/Favicons/favicon.ico">
+        <meta name="keywords" content="javascript, functions, text, manipulation">
+        <meta name="description" content="A series of useful Javascript functions">
+        <meta name="author" content="Ben Lang">        
+        <base href="http://bl3rune.github.io/">
         <script>
             function convert(){
                 document.getElementById('output').innerHTML = document.getElementById('input').value.replace(/\n/g,',\n');
@@ -13,21 +18,20 @@
     </head>
     <body>
         <nav>
-            <h1>Simple Delimiter</h1>
+            <p>Simple Delimiter</p>
+            <a href="index.html"><p>Home</p></a>
         </nav>
         <div class="wrapper">
             <div class="left">
-                <h1>Input Text</h1>
+                <p>Input Text</p>
                 <textarea id="input"></textarea>
             </div>
             <div class="center">
-                <h1>Functions</h1>
-                <div>
-                  <input type="button" onclick="convert();" value="Submit">
-                </div>
+                <p>Functions</p>
+                <button onclick="convert();">Convert</button>
             </div>
             <div class="right">
-                <h1>Output Text</h1>
+                <p>Output Text</p>
                 <textarea id="output"></textarea>
             </div>
         </div>

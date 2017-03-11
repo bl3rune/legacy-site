@@ -5,41 +5,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <script>
-            function convert(){
-                var text = document.getElementById('input').value;
-                text = text.replace(/\n/g,',\n');
-                document.getElementById('output').innerHTML = text;
-            }
-            
-            function delim(text){
-                return text;
-            }
-        </script>
+        <link rel="shortcut icon" href="images/Favicons/favicon.ico">
+        <meta name="keywords" content="javascript, functions, text, manipulation">
+        <meta name="description" content="A series of useful Javascript functions">
+        <meta name="author" content="Ben Lang">        
+        <base href="http://bl3rune.github.io/">
     </head>
     <body>
         <nav>
-            <h1>JS Text Functions</h1>
+            <p>JS Functions </p>
         </nav>
         <div class="wrapper">
-            <div class="left">
-                <h1>Input Text</h1>
-                <textarea id="input"></textarea>
-            </div>
-            <div class="center">
-                <h1>Functions</h1>
-                <div>
-                    <div></div>
-                </div>
-                <form action="convert();" method="get">
-                    <input type="hidden" name="vehicle" value="Bike"><br>
-                    <input type="hidden" name="vehicle" value="Car" ><br>
-                    <input type="button" onclick="convert();" value="Submit">
-                </form>
-            </div>
-            <div class="right">
-                <h1>Output Text</h1>
-                <textarea id="output"></textarea>
+            <div class="home-link">
+                <a href="delimiter.html"><div class="link-box"><p class="home-link-text">Delimiter<p></div></a>
             </div>
         </div>
     </body>
