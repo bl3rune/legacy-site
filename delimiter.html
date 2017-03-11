@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delimiter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script>
+            function convert(){
+                document.getElementById('output').innerHTML = document.getElementById('input').value.replace(/\n/g,',\n');
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <h1>Simple Delimiter</h1>
+        </nav>
+        <div class="wrapper">
+            <div class="left">
+                <h1>Input Text</h1>
+                <textarea id="input"></textarea>
+            </div>
+            <div class="center">
+                <h1>Functions</h1>
+                <div>
+                  <input type="button" onclick="convert();" value="Submit">
+                </div>
+            </div>
+            <div class="right">
+                <h1>Output Text</h1>
+                <textarea id="output"></textarea>
+            </div>
+        </div>
+    </body>
+</html>
