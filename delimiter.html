@@ -8,11 +8,11 @@
         <link rel="shortcut icon" href="images/Favicons/favicon.ico">
         <meta name="keywords" content="javascript, functions, text, manipulation">
         <meta name="description" content="A series of useful Javascript functions">
-        <meta name="author" content="Ben Lang">        
+        <meta name="author" content="Ben Lang">
         <base href="http://bl3rune.github.io/">
         <script>
-            function convert(){
-                document.getElementById('output').innerHTML = document.getElementById('input').value.replace(/\n/g,',\n');
+            function convert(input,output){
+                document.getElementById('output').innerHTML = document.getElementById('input').value.replace(new RegExp(input,'g'),output);
             }
         </script>
     </head>
@@ -27,8 +27,14 @@
                 <textarea id="input"></textarea>
             </div>
             <div class="center">
-                <p>Functions</p>
-                <button onclick="convert();">Convert</button>
+                <p>Delimit by</p>
+                <button onclick="convert('\n',',');">Comma</button>
+                <button onclick="convert('\n',',\n');">Comma + New Line</button>
+                <button onclick="convert(document.getElementById('cust_in').value,document.getElementById('cust_out').value);">Custom</button>
+                <p>Custom Input</p>
+                <textarea id="cust_in">,</textarea>
+                <p>Custom Output</p>
+                <textarea id="cust_out">...</textarea>
             </div>
             <div class="right">
                 <p>Output Text</p>
