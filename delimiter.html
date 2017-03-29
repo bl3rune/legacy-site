@@ -27,9 +27,15 @@
                 <textarea class="textbox" id="input"></textarea>
             </div>
             <div class="center">
-                <p>Delimit by</p>
+                <p>Delimit from new line by</p>
                 <button onclick="convert('\n',',');">Comma</button>
                 <button onclick="convert('\n',',\n');">Comma + New Line</button>
+                <p>Delimit from comma by</p>
+                <button onclick="convert(',','\n');">New Line</button>
+                <button onclick="convert(',',',\n');">Comma + New Line</button>
+                <p>Delimit from tab by</p>
+                <button onclick="convert('\t',',');">Comma</button>
+                <button onclick="convert('\t',',\n');">Comma + New Line</button>
                 <button onclick="convert(document.getElementById('cust_in').value,document.getElementById('cust_out').value);">Custom</button>
                 <p>Custom Input</p>
                 <textarea id="cust_in">,</textarea>
