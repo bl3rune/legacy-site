@@ -44,37 +44,38 @@ a{
     height: 300px;
 }
 
+.small-textbox{
+    width: 90%;
+}
+
 .left {
-    width: 38%;
+    width: 35%;
     height: 100%;
     float: left;
     background-color: #eee;
     padding: 1%;
     box-shadow: 0px 0px 40px #464;
     margin: 1%;
-    min-width: 400px;
 }
 
 .center {
-    width: 12%;
+    width: 18%;
     height: 100%;
     float: left;
     background-color: #eee;
     padding: 1%;
     box-shadow: 0px 0px 40px #464;
     margin: 1%;
-    min-width: 100px;
 }
 
 .right {
-    width: 38%;
+    width: 35%;
     height: 100%;
     float: left;
     background-color: #eee;
     padding: 1%;
     box-shadow: 0px 0px 40px #464;
     margin: 1%;
-    min-width: 400px;
 }
 
 .home-link {
