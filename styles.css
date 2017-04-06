@@ -85,6 +85,14 @@ a{
     box-shadow: 0px 0px 40px #464;
 }
 
-.home-link-text{
+.home-link:hover {
+    background-color: #666;
+}
 
+.home-link:hover .home-link-text{
+color: #ddd;
+}
+
+.hover-link:hover{
+    box-shadow: 0px 0px 1px #111;
 }

@@ -18,8 +18,7 @@
     </head>
     <body>
         <nav>
-            <p>Simple Delimiter</p>
-            <a href="index.html"><p>Home</p></a>
+            <p><a href="index.html" class="hover-link">Home</a> | Simple Delimiter</p>
         </nav>
         <div class="wrapper">
             <div class="left">
@@ -30,16 +29,16 @@
                 <p>Delimit from new line by</p>
                 <button onclick="convert('\n',',');">Comma</button>
                 <button onclick="convert('\n',',\n');">Comma + New Line</button>
-                <p>Delimit from comma by</p>
+                <p>from comma by</p>
                 <button onclick="convert(',','\n');">New Line</button>
                 <button onclick="convert(',',',\n');">Comma + New Line</button>
-                <p>Delimit from tab by</p>
+                <p>from tab by</p>
                 <button onclick="convert('\t',',');">Comma</button>
                 <button onclick="convert('\t',',\n');">Comma + New Line</button>
                 <button onclick="convert(document.getElementById('cust_in').value,document.getElementById('cust_out').value);">Custom</button>
-                <p>Custom Input</p>
+                <p>Input</p>
                 <textarea id="cust_in" class="small-textbox">,</textarea>
-                <p>Custom Output</p>
+                <p>Output</p>
                 <textarea id="cust_out" class="small-textbox">...</textarea>
             </div>
             <div class="right">
