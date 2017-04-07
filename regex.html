@@ -11,14 +11,8 @@
         <meta name="author" content="Ben Lang">
         <base href="http://bl3rune.github.io/">
         <script>
-            function check(input){
-                var result = new RegExp(regex).test(document.getElementById('input').value);
-                if(result){
-                    document.getElementById('output').setAttribute('box-shadow','0px 0px 4px #0f0');
-                }else{
-                    document.getElementById('output').setAttribute('box-shadow','0px 0px 4px #f00')
-                }
-                document.getElementById('output').innerHTML = result;
+            function check(){
+                document.getElementById('output').innerHTML = new RegExp(document.getElementById('regex').value,document.getElementById('flags').value).test(document.getElementById('input').value);
             }
         </script>
     </head>
@@ -32,13 +26,15 @@
                 <textarea class="textbox" id="input"></textarea>
             </div>
             <div class="center">
-                <p>Regular Expression</p>
+                <p>Regex</p>
                 <textarea id="regex" class="small-textbox"></textarea>
-                <button onclick="check(document.getElementById('regex').value);">Check Regex</button>
+                <p>Flags</p>
+                <textarea id="flags" class="small-textbox"></textarea>
+                <button onclick="check();">Check Regex</button>
             </div>
             <div class="right">
                 <p>Match</p>
-                <textarea class="textbox" id="output"></textarea>
+                <p id="output"></p>
             </div>
         </div>
     </body>
