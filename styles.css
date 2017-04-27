@@ -18,7 +18,7 @@ nav{
 }
 
 .wrapper {
-    margin-top: 55px;
+    margin-top: 65px;
     width: 100%;
     background-color: #111;
 }
@@ -47,26 +47,26 @@ a{
 }
 
 .textbox{
-    width:  90%;
+    width:  98%;
     height: 300px;
 }
 
 .small-textbox{
-    width: 90%;
+    width: 98%;
 }
 
 .left {
-    width: 35%;
+    width: 36%;
     height: 100%;
     float: left;
     background-color: #eee;
     padding: 1%;
     box-shadow: 0px 0px 40px #464;
-    margin: 1%;
+    margin-top: 1%;
 }
 
 .center {
-    width: 18%;
+    width: 20%;
     height: 100%;
     float: left;
     background-color: #eee;
@@ -76,13 +76,13 @@ a{
 }
 
 .right {
-    width: 35%;
+    width: 36%;
     height: 100%;
     float: left;
     background-color: #eee;
-    padding: 1%q;
+    padding: 1%;
     box-shadow: 0px 0px 40px #464;
-    margin: 1%;
+    margin-top: 1%;
 }
 
 .link-image {
@@ -98,12 +98,24 @@ a{
     height: 100%;
 }
 
-.home-link {
-    display: inline-block;
-    max-width: 400px;
-    position: relative;
+.flex-box {
     width: 100%;
-    box-shadow: 0px 0px 5px #464;
+    display: -webkit-inline-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: inline-flex;
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.home-link {
+    -webkit-flex: auto; /* Safari 6.1+ */
+    -ms-flex: auto; /* IE 10 */
+    flex: auto;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    box-shadow: 0px 0px 14px #ccc;
 }
 
 .link-box:hover {
