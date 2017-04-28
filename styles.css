@@ -4,6 +4,7 @@
 */
 body {
     background-color: #111;
+    font-family: Helvetica, Verdana, sans-serif;
 }
 
 nav{
@@ -27,15 +28,17 @@ button{
     width: 100%;
 }
 
+ul{
+    list-style: none;
+}
+
 h1{
-    font-family: Helvetica, Verdana, sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 p{
-    font-family: Helvetica, Verdana, sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
