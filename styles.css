@@ -119,6 +119,7 @@ a{
     height: auto;
     position: relative;
     box-shadow: 0px 0px 14px #ccc;
+    margin-bottom: 20px;
 }
 
 .link-box:hover {
