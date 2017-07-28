@@ -17,23 +17,24 @@
         </script>
     </head>
     <body>
-        <nav>
-            <p><a href="index.html" class="hover-link">Home</a> | Regex Checker</p>
+        <nav class="title">
+            <span><a href="index.html" class="hover-link">Home</a></span>
+            <span class="unselectable">| Regex Checker</span>
         </nav>
         <div class="wrapper">
             <div class="left">
-                <p>Input Text</p>
+                <p class="title">Input Text</p>
                 <textarea class="textbox" id="input"></textarea>
             </div>
             <div class="center">
-                <p>Regex</p>
+                <p class="title">Regex</p>
                 <textarea id="regex" class="small-textbox"></textarea>
-                <p>Flags</p>
+                <p class="title">Flags</p>
                 <textarea id="flags" class="small-textbox"></textarea>
                 <button onclick="check();">Check Regex</button>
             </div>
             <div class="right">
-                <p>Match</p>
+                <p class="title">Match</p>
                 <p id="output"></p>
             </div>
         </div>

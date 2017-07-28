@@ -17,32 +17,33 @@
         </script>
     </head>
     <body>
-        <nav>
-            <p><a href="index.html" class="hover-link">Home</a> | Simple Delimiter</p>
+        <nav class="title">
+            <span><a href="index.html" class="hover-link">Home</a></span>
+            <span class="unselectable">| Simple Delimiter</span>
         </nav>
         <div class="wrapper">
             <div class="left">
-                <p>Input Text</p>
+                <p class="title">Input Text</p>
                 <textarea class="textbox" id="input"></textarea>
             </div>
             <div class="center">
-                <p>Delimit from new line by</p>
+                <p class="title">Delimit from new line by</p>
                 <button onclick="convert('\n',',');">Comma</button>
                 <button onclick="convert('\n',',\n');">Comma + New Line</button>
-                <p>from comma by</p>
+                <p class="title">from comma by</p>
                 <button onclick="convert(',','\n');">New Line</button>
                 <button onclick="convert(',',',\n');">Comma + New Line</button>
-                <p>from tab by</p>
+                <p class="title">from tab by</p>
                 <button onclick="convert('\t',',');">Comma</button>
                 <button onclick="convert('\t',',\n');">Comma + New Line</button>
                 <button onclick="convert(document.getElementById('cust_in').value,document.getElementById('cust_out').value);">Custom</button>
-                <p>Input</p>
+                <p class="title">Input</p>
                 <textarea id="cust_in" class="small-textbox">,</textarea>
-                <p>Output</p>
+                <p class="title">Output</p>
                 <textarea id="cust_out" class="small-textbox">...</textarea>
             </div>
             <div class="right">
-                <p>Output Text</p>
+                <p class="title">Output Text</p>
                 <textarea class="textbox" id="output"></textarea>
             </div>
         </div>

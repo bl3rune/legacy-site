@@ -15,23 +15,24 @@
         </script>
     </head>
     <body>
-        <nav>
-            <p><a href="index.html" class="hover-link">Home</a> | Difference Viewer</p>
+        <nav class="title">
+            <span><a href="index.html" class="hover-link">Home</a></span>
+            <span class="unselectable">| Difference Viewer</span>
         </nav>
         <div class="wrapper">
             <div class="left">
-                <p>Original File</p>
+                <p class="title">Original File</p>
                 <textarea class="textbox" id="input"></textarea>
             </div>
             <div class="center">
-                <p>Options</p>
+                <p class="title">Options</p>
                 <ul>
                     <li>Ignore Whitespace Changes: <input type="checkbox" id="ignoreWhitespace"></li>
                 </ul>
                 <button onclick="alert('');">Compare</button>
             </div>
             <div class="right">
-                <p>Modified File</p>
+                <p class="title">Modified File</p>
                 <textarea class="textbox" id="output"></textarea>
             </div>
         </div>
